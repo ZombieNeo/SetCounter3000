@@ -4,7 +4,8 @@ time.sleep(1)
 print("so add +1 on set number")
 time.sleep(1)
 saves = 1
-s = open("data.txt", "a")#opens text file
+date = input("enter date eg  (2.10.20) ")
+s = open("%s.txt" % date, "a")#opens text file
 lift = input("enter lift: ")#lets user enter exercise
 mass = int(input("enter mass (KG):"))#lets user enter mass
 reps=input("how many reps? ")
@@ -18,7 +19,7 @@ while currentset < setcount:#compares current set to user entered set
     print("you are on set "+str(currentset))#prints current set
     if currentset == setcount:#checks if you have completed the sets
         print("Good job! you done!")#prints nic emssaghe :)
-        s = open("data.txt", "a")#opens txt file
+        s = open("%s.txt" % date, "a")#opens text file
         s.write(str(lift)+":"+"\n")
         while saves < setcount:
             s.write(str(mass)+"x"+str(reps)+"\n")#saves setcount to files MAKE THIS DO IT SET times
