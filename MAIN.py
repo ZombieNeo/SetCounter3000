@@ -1,5 +1,6 @@
 import time
 global saves
+congrats = ["test","lol"]
 saves = 1#dont know what this does or wahy its called saves lol
 def new_lift_main_loaded(): #runs if you load save
 
