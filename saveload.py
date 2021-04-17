@@ -1,4 +1,5 @@
 #load save
+
 def save_system():
     doload = "y"
     if doload == "y" or "Y":
@@ -11,3 +12,6 @@ def save_system():
         pass
     
 save_system()
+
+#DOESTN CHECK IF FILE ACTUALLY EXISTS PEPEGA CLAP FIX THIS LATER
+    
