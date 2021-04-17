@@ -26,7 +26,7 @@ def new_lift_main_loaded(): #runs if you load save
                 saves = saves + 1
             stop = input("CONTINUE TRAINING? ")
             if stop == "y":
-                BESTCODERKEKW()
+                KEEPGOING()
                 s.close()
             else:
                 print(random.choice(bye))
@@ -60,7 +60,7 @@ def new_lift_main_fresh(): #runs if you start fresh
                 saves = saves + 1
             stop = input("CONTINUE TRAINING? ")
             if stop == "y":
-                BESTCODERKEKW()
+                KEEPGOING()
                 s.close()
             else:
                 print(random.choice(bye))
@@ -80,23 +80,6 @@ def new_lift_main_fresh(): #runs if you start fresh
 
 
 def BESTCODERKEKW():
-    print("REMEMBER PYTHON COUNTS FROM 0")
-    time.sleep(1)
-    print("so add +1 on set number")
-    time.sleep(1)
-    print("\n")
-    print("\n")
-    print("\n")
-    print("\n")
-    print("\n")
-    print("\n")
-    time.sleep(0.5)
-    print("----------------------------------------------------------")
-    time.sleep(0.5)
-    wlc=open("welcome.txt", "r")
-    file_contents = wlc.read()
-    print(file_contents)
-    print("----------------------------------------------------------")
     doyouwanttosave = input("do you want to load a save file? ")#lets you load save
     if doyouwanttosave.lower() == "y":
         import saveload
@@ -108,7 +91,12 @@ def BESTCODERKEKW():
         s = open("%s.txt" % date, "a")#opens text file
         new_lift_main_fresh()
         
-
+def KEEPGOING():
+        global date
+        date = date
+        s = open("%s.txt" % date, "a")#opens text file
+        new_lift_main_loaded()
+      
 
 
 
