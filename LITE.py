@@ -2,9 +2,8 @@ import time
 import random
 motiv = ["YOU GOTTA GET THE JUICE!","COME ON!, MORE ENERGY"]
 congrats = ["POGGERS","THE BREAD HAS BEEN GOTTEN", "YOU GOT THE JUICE"]
-bye = ["GOODBYE WARLORD", "CYA SOON"]
+bye = ["GOODBYE WARLORD", "CYA SOON", "GG EZ"]
 saves = 1#dont know what this does or wahy its called saves lol
-
 
 
 
@@ -15,8 +14,6 @@ def new_lift_main_loaded(): #runs if you load save
     mass = int(input("enter mass (KG):"))#lets user enter mass
     reps=input("how many reps? ")
     setcount = int(input("enter num of sets "))#lets user enter set number
-    #s.write(str(lift)+":"+"\n"+str(mass)+"KG"+"x")#writes lift and mass and line break to file
-    #s.close#closes txt file
     currentset = 1#decares current set as variable
     while currentset < setcount:#compares current set to user entered set
         comp = input("press any key to start next set")#lets user go through sets
